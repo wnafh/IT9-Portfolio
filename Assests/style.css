@@ -1,0 +1,124 @@
+body{
+    background-color: #333;
+    color: #ffffff;
+    font-family:'Times New Roman', Times, serif;
+}
+.dbbd {
+    background-color: #ffffff;
+}
+.nav {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+}
+a {
+    text-decoration: underline;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav a:not([href*="instagram"]):not([href*="github"]):not([href*="mailto"]) {
+    padding: 5px 10px;
+}
+
+.nav a[href*="instagram"],
+.nav a[href*="github"],
+.nav a[href*="mailto"] {
+    font-size: 1.3rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.nav a:hover {
+    color: #007bff;
+}
+
+
+.nav a[href*="instagram"]:hover {
+    color: #e4405f;
+}
+
+.nav a[href*="github"]:hover {
+    color: #333;
+}
+
+.nav a[href*="mailto"]:hover {
+    color: #ea4335;
+}
+
+
+.split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    align-items: center;  
+    margin-top: 80px;
+}
+
+
+.left-side {
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.left-side h1 {
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #fffbfb;
+    margin-bottom: 0;
+}
+
+.left-side h2 {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1;
+    color: #ffffff;
+    margin-bottom: 0; 
+    margin-top: 0;
+}
+
+.cent :hover {
+    text-shadow: 0 10px 15px #514f4fcc;
+}
+
+.right-side {
+    padding: 64px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+   
+    height: 100%;
+}
+
+.right-side h3 {
+    font-size: 28.8px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+
+.right-side p {
+    font-size: 17.6px;
+    line-height: 1.8;
+    color: #ffffff;
+    margin-bottom: 24px;
+    max-width: 450px;
+}
